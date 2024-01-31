@@ -10,3 +10,7 @@ export class DappDataDTO {
 
   dappName?: string;
 }
+
+export class downLoadDTO {
+  id: string;
+}

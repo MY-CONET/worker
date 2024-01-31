@@ -1,6 +1,7 @@
 import { Controller, Get, Post, Body } from '@nestjs/common';
 import { DappListService } from './dapp-list.service';
-import { DappDataDTO } from './dto/dapp-list.dto';
+import { DappDataDTO, downLoadDTO } from './dto/dapp-list.dto';
+import { list } from './data';
 
 @Controller('dapp-list')
 export class DappListController {
@@ -20,24 +21,6 @@ export class DappListController {
 
   @Get()
   findAll() {
-    const list = [
-      {
-        name: 'h5',
-        icon: 'icon1.svg',
-        url: '/',
-        zipHref: '/buildZipList/dist.zip',
-        zipName: 'dist',
-        id: '1',
-      },
-      {
-        name: 'admin',
-        icon: 'icon2.svg',
-        url: '/admin/',
-        zipHref: '/buildZipList/fruugo-admin.zip',
-        zipName: 'fruugo-admin',
-        id: '2',
-      },
-    ];
     const resList = list.map((item) => {
       return {
         name: item.name,
@@ -50,6 +33,20 @@ export class DappListController {
       code: 200,
       data: resList,
       message: 'success',
+    };
+  }
+
+  // 下载zip包
+  @Get('download')
+  async download(@Body() createDappListDto: downLoadDTO) {
+    const id = createDappListDto.id;
+    console.log('🚀  file: dapp-list.controller.ts:43  ', id);
+    const data = await this.dappListService.download(id);
+    // 给前端返回一个二进制流
+    return {
+      code: 200,
+      data: data,
+      message: true,
     };
   }
 }
