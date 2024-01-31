@@ -1741,6 +1741,11 @@ chardet@^0.7.0:
   resolved "https://registry.npmmirror.com/chardet/-/chardet-0.7.0.tgz#90094849f0937f2eedc2425d0d28a9e5f0cbad9e"
   integrity sha512-mT8iDcrh03qDGRRmoA2hmBJnxpllMR+0/0qlzjqZES6NdiWDcZkCNAk4rPFZ9Q85r27unkiNNg8ZOiwZXBHwcA==
 
+child_process@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.npmmirror.com/child_process/-/child_process-1.0.2.tgz#b1f7e7fc73d25e7fd1d455adc94e143830182b5a"
+  integrity sha512-Wmza/JzL0SiWz7kl6MhIKT5ceIlnFPJX+lwUGj7Clhy5MMldsSoJR0+uvRzOS5Kv45Mq7t1PoE8TsOA9bzvb6g==
+
 chokidar@3.5.3, chokidar@^3.5.3:
   version "3.5.3"
   resolved "https://registry.npmmirror.com/chokidar/-/chokidar-3.5.3.tgz#1cf37c8707b932bd1af1ae22c0432e2acd1903bd"
@@ -3810,6 +3815,11 @@ neo-async@^2.6.2:
   version "2.6.2"
   resolved "https://registry.npmmirror.com/neo-async/-/neo-async-2.6.2.tgz#b4aafb93e3aeb2d8174ca53cf163ab7d7308305f"
   integrity sha512-Yd3UES5mWCSqR+qNT93S3UoYUkqAZ9lLg8a7g9rimsWmYGK8cVToA4/sF3RrshdyV3sAGMXVUmpMYOw+dLpOuw==
+
+net@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.npmmirror.com/net/-/net-1.0.2.tgz#d1757ec9a7fb2371d83cf4755ce3e27e10829388"
+  integrity sha512-kbhcj2SVVR4caaVnGLJKmlk2+f+oLkjqdKeQlmUtz6nGzOpbcobwVIeSURNgraV/v3tlmGIX82OcPCl0K6RbHQ==
 
 node-abort-controller@^3.0.1:
   version "3.1.1"

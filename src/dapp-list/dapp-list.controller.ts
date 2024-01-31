@@ -24,9 +24,9 @@ export class DappListController {
       {
         name: 'h5',
         icon: 'icon1.svg',
-        url: '/h5/',
-        zipHref: '/buildZipList/fruugo.zip',
-        zipName: 'fruugo',
+        url: '/',
+        zipHref: '/buildZipList/dist.zip',
+        zipName: 'dist',
         id: '1',
       },
       {
